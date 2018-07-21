@@ -1,25 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>Talented Status</title>
-    <style>
-      body{background: darkgrey;}
-      h1{color: white;}
-    </style>
-    <body>
-      <b><i><center><h1>Talented Status</h1></center></i></b>
-      <hr width=1500 height=200 color=darkred />
-      <br><br>
-      <h2 style="color:white">Talented Login Website - <center<div style="color:green">Online</div></h2>
-          <h2 style="color:white">Talented Signup Website - <center<div style="color:green">Online</div></h2>
-        <h2 style="color:white">Talented Login System - <center<div style="color:red">Offline</div></h2>
-      <h2 style="color:white">Talented Signup System - <center<div style="color:red">Offline</div></h2>
-      <h2 style="color:white">Talented Profile Website/System - <center<div style="color:red">Offline</div></h2>
-      <h2 style="color:white">Talented Upload System - <center<div style="color:red">Offline</div></h2>
-      <h2 style="color:white">Talented Chat System - <center<div style="color:red">Offline</div></h2>
-    <p style="color:white"> Need support?
-      <center<div style="color:red"><a href="https://discord.gg/8gWvN7j"> https://discord.gg/8gWvN7j </a>  or jdcoding01@gmail.com</div></p>
-      
-<p style="color:red">&copy; Talented 2018</p>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <script type="text/javascript" src="jquery.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untitled Document</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Talented Status</h1>
+  </div>
+  <div class="container">
+    <div class="card-header">
+      <h4>Talented Main System
+        <i class="fas fa-times-circle" id="red"></i>
+      </h4>
+    </div>
+    <ul class="list-group list-group-flush ">
+      <li class="list-group-item">
+        <h5>Talented Login Website
+          <i class="fas fa-check-circle" id="green"></i>
+        </h5>
+      </li>
+      <li class="list-group-item ">
+        <h5>Talented Signup System
+          <i class="fas fa-check-circle" id="green"></i>
+        </h5>
+      </li>
+      <li class="list-group-item ">
+        <h5>Talented Login System
+          <i class="fas fa-times-circle" id="red"></i>
+        </h5>
+      </li>
+
+      <li class="list-group-item ">
+        <h5>Talented Profile System
+          <i class="fas fa-times-circle" id="red"></i>
+        </h5>
+      </li>
+      <li class="list-group-item ">
+        <h5>Talented Upload System
+          <i class="fas fa-times-circle" id="red"></i>
+        </h5>
+      </li>
+      <li class=" list-group-item ">
+        <h5>Talented Messaging System
+          <i class="fas fa-times-circle" id="red"></i>
+        </h5>
+      </li>
+            <li class=" list-group-item ">
+        <h5>Talented Friending System
+          <i class="fas fa-times-circle" id="red"></i>
+        </h5>
+      </li>
+       <li class=" list-group-item ">
+        <h5>Talented Helpdesk/Support System
+          <i class="fas fa-times-circle" id="red"></i>
+        </h5>
+      </li>
+    </ul>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $(".card-header").click(function () {
+        $("li").slideToggle("500");
+      });
+    });
+  </script>
 </body>
+
 </html>
